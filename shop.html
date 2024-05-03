@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+        integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="css/shop.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Jost:wght@100;200;300;400;500;600;700;800;900&family=Open+Sans:wght@300;400;500;600;700;800&family=Roboto:wght@100;300;400;500;700;900&display=swap"
+        rel="stylesheet">
+    <title>Новогодняя распродажа в Revo</title>
+    <link rel="stylesheet" href="./css/overlay.css">
+</head>
+
+<body>
+    <header class="header">
+        <div class="header__top">
+            <nav class="nav">
+                <div class="nav-logo">
+                    <a href="index.html">
+                        <img src="img/images/revo_logo.png" alt="Здесь должна была быть картинка">
+                    </a>
+                </div>
+
+                <ul class="nav-list">
+                    <li><a href="index.html">Главная</a></li>
+                    <li><a href="company.html">О компании</a></li>
+                    <li><a href="shop.html">Магазин</a></li>
+                    <li><a href="#footer" class="footer-li">Конакты</a></li>
+                </ul>
+
+                
+                <div class="cart-icon">
+                    <i class="fa-solid fa-cart-shopping"></i>
+                    <span class="cart-count">0</span>
+                </div>
+                <div class="cart-modal">
+                    <div class="cart-content">
+                        <span class="close-btn">&times;</span>
+                        <h2>Ваша корзина</h2>
+                        <div class="cart-items"></div>
+                    </div>
+                </div>
+
+                <div class="burger none">
+                    <span></span>
+                </div>
+                <div class="language-switcher">
+                    <button id="switch-lang" onclick="switchLanguage(currentLanguage = (currentLanguage === 'ru') ? 'kz' : 'ru')">Переключить на казахский</button>
+                </div>
+                
+            </nav>
+        </div>
+    </header>
+
+    <main class="main">
+        <div class="container">
+            <section class="hero" id="hero">
+                <div class="hero__content">
+                    <h1 class="hero__title title" data-translate="Лучшие предложения">Лучшие предложения</h1>
+
+                    <div class="hero__wrapper">
+                        <div class="hero__grid">
+                            <div class="overlay">Товара нет</div>
+                            <a href="product-website-1.html" class="hero__element">
+                                <article class="grid-card">
+                                    <img src="img/images/applemacbookair13.jpg" alt="Здесь должна была быть картинка">
+                                    <h2>Ноутбук Apple MacBook Air 13</h2>
+                                    <h3>398 890 ₸</h3>
+                                    <h4>439 997₸</h4> 
+                                </article>
+                            </a>
+                            <a  class="hero__element">
+                                <article class="grid-card">
+                                    <img src="img/images/lenovo_legion_5.jpg" alt="Здесь должна была быть картинка">
+                                    <h2>Игровой ноутбук Lenovo Legion 5</h2>
+                                    <h3>569 990 ₸</h3>
+                                    <h4>629 990 ₸</h4> 
+                                </article>
+                            </a>
+                            <a href="product-website-3.html" class="hero__element">
+                                <article class="grid-card">
+                                    <img src="img/images/asus_tuf_gaming_f15.jpg" alt="Здесь должна была быть картинка">
+                                    <h2>Игровой ноутбук Asus TUF Gaming F15</h2>
+                                    <h3>409 990 ₸</h3>
+                                    <h4>439 990 ₸</h4> 
+                                </article>
+                            </a>
+                            <a href="product-website-4.html" id="one" class="hero__element click-block">
+                                <article class="grid-card">
+                                    <img src="img/images/hp-victus.jpg" alt="Здесь должна была быть картинка">
+                                    <h2>Игровой ноутбук HP VICTUS 16-d0003ur</h2>
+                                    <h3>482 990 ₸</h3>
+                                    <h4>679 890 ₸</h4> 
+                                </article>
+                            </a>
+                            <a href="product-website-5.html" id="two" class="hero__element click-block">
+                                <article class="grid-card">
+                                    <img src="img/images/igrovoj_noutbuk_156_acer_predator_helios_300_ph315_55_ci5_12500h_16_512_rtx3070ti_8_dnhqfter0_275938_1.jpg" alt="Здесь должна была быть картинка">
+                                    <h2>Игровой ноутбук Acer Predator Helios 300</h2>
+                                    <h3>599 990 ₸</h3>
+                                    <h4>671 990 ₸</h4> 
+                                </article>
+                            </a>
+                            <a href="product-website-6.html" id="three" class="hero__element click-block">
+                                <article class="grid-card">
+                                    <img src="img/images/262419_13.jpg" alt="Здесь должна была быть картинка">
+                                    <h2>Игровой ноутбук Lenovo Gaming 3</h2>
+                                    <h3>429 990 ₸</h3>
+                                    <h4>519 990 ₸</h4> 
+                                </article>
+                                
+                            </a>
+                            <a href="product-website-7.html" id="four"  class="hero__element click-block">
+                                <article class="grid-card">
+                                    <img src="img/images/igrovoj_noutbuk_161_hp_omen_16_wd0009ci_ci5_13420h_16_512_rtx4050_6_d81c38ea_275644_1.jpg" alt="Здесь должна была быть картинка">
+                                    <h2>Игровой ноутбук HP OMEN 16</h2>
+                                    <h3>559 990 ₸</h3>
+                                    <h4>599 990 ₸</h4> 
+                                </article>
+                            </a>
+                            <a href="product-website-8.html" id="five"  class="hero__element click-block">
+                                <article class="grid-card">
+                                    <img src="img/images/igrovoj_noutbuk_lenovo_ideapad_gaming_3_i7_12650h_16gb_512ssd_268505_1b.jpg" alt="Здесь должна была быть картинка">
+                                    <h2>Игровой ноутбук Lenovo IdeaPad Gaming 3</h2>
+                                    <h3>489 990 ₸</h3>
+                                    <h4>559 990 ₸</h4>
+                                </article>
+                            </a>
+                            <a href="product-website-9.html" id="six"  class="hero__element click-block">
+                                <article class="grid-card">
+                                    <img src="img/images/igrovoj_noutbuk_16_asus_rog_strix_g16_ci5_13450hx_16_1000_rtx4050_6_dg614ju_n3170_269962_1zz.jpg" alt="Здесь должна была быть картинка">
+                                    <h2>Игровой ноутбук Asus ROG Strix G16</h2>
+                                    <h3>689 990 ₸</h3>
+                                    <h4>787 990 ₸</h4>
+                                </article>
+                            </a>
+                            <a href="product-website-10.html" id="seven" class="hero__element click-block">
+                                <article class="grid-card">
+                                    <img src="img/images/igrovoj_noutbuk_asus_rog_zephyrus_m16_gu603ze_k8033_257920_1b.jpg" alt="Здесь должна была быть картинка">
+                                    <h2>Игровой ноутбук Asus ROG Zephyrus M16</h2>
+                                    <h3>699 990 ₸</h3>
+                                    <h4>797 990 ₸</h4>
+                                </article>
+                            </a>
+                            <a href="product-website-11.html" id="eight" class="hero__element click-block">
+                                <article class="grid-card">
+                                    <img src="img/images/noutbuk_16_asus_vivobook_16_m1605ya_mb350_275199_1.jpg" alt="Здесь должна была быть картинка">
+                                    <h2>Ноутбук Asus Vivobook 16 Ryzen 5</h2>
+                                    <h3>209 990 ₸</h3>
+                                    <h4>239 990 ₸</h4>
+                                </article>
+                            </a>
+                            <a href="product-website-12.html" id="nine" class="hero__element click-block">
+                                <article class="grid-card">
+                                    <img src="img/images/ultrabuk_14_asus_zenbook_14_oled_ux3405ma_pp305w_275214_1z.jpg" alt="Здесь должна была быть картинка">
+                                    <h2>Ультрабук Asus Zenbook 14</h2>
+                                    <h3>559 990 ₸</h3>
+                                    <h4>619 990 ₸</h4>
+                                </article>
+                            </a>
+                            <div class="overlay">Товара нет</div>
+                        </div>
+
+                        <div class="hero__right">
+                            <h2 class="right-title" data-translate="Продукты">
+                                Продукты
+                            </h2>
+
+                            <div class="right-block">
+                                <a href="product-website-1.html">
+                                    <div class="left">
+                                        <h2>
+                                            Ноутбук Apple MacBook Air 13
+                                        </h2>
+
+                                        <p><span>439 997 ₸</span>398 890 ₸</p>
+                                    </div>
+
+                                    <div class="right">
+                                        <img src="img/images/applemacbookair13.jpg" alt="Здесь должна была быть картинка">
+                                    </div>
+                                </a>
+                                <a href="product-website-2.html">
+                                    <div class="left">
+                                        <h2>
+                                            Игровой ноутбук Lenovo Legion 5
+                                        </h2>
+
+                                        <p><span>629 990 ₸</span>569 990 ₸</p>
+                                    </div>
+
+                                    <div class="right">
+                                        <img src="img/images/lenovo_legion_5.jpg" alt="Здесь должна была быть картинка">
+                                    </div>
+                                </a>
+                                <a href="product-website-3.html">
+                                    <div class="left">
+                                        <h2>
+                                            Игровой ноутбук Asus TUF Gaming F15
+                                        </h2>
+
+                                        <p><span>439 990 ₸</span>409 990₸</p>
+                                    </div>
+
+                                    <div class="right">
+                                        <img src="img/images/asus_tuf_gaming_f15.jpg" alt="Здесь должна была быть картинка">
+                                    </div>
+                                </a>
+                                <a href="product-website-4.html" class="click-block">
+                                    <div class="left">
+                                        <h2>
+                                            Игровой ноутбук HP VICTUS 16-d0003ur
+                                        </h2>
+
+                                        <p><span>679 890 ₸</span>482 990 ₸</p>
+                                    </div>
+
+                                    <div class="right">
+                                        <img src="img/images/hp-victus.jpg" alt="Здесь должна была быть картинка">
+                                    </div>
+                                </a>
+                                <a href="product-website-5.html" class="click-block">
+                                    <div class="left">
+                                        <h2>
+                                            Игровой ноутбук Acer Predator Helios 300
+                                        </h2>
+
+                                        <p><span>671 990 ₸</span>599 990₸</p>
+                                    </div>
+
+                                    <div class="right">
+                                        <img src="img/images/igrovoj_noutbuk_156_acer_predator_helios_300_ph315_55_ci5_12500h_16_512_rtx3070ti_8_dnhqfter0_275938_1.jpg" alt="Здесь должна была быть картинка">
+                                    </div>
+                                </a>
+                                <a href="product-website-6.html" class="click-block">
+                                    <div class="left">
+                                        <h2>
+                                            Игровой ноутбук Lenovo Gaming 3
+                                        </h2>
+
+                                        <p><span>519 990 ₸</span>429 990 ₸</p>
+                                    </div>
+
+                                    <div class="right">
+                                        <img src="img/images/262419_13.jpg" alt="Здесь должна была быть картинка">
+                                    </div>
+                                </a>
+                                <a href="product-website-7.html" class="click-block">
+                                    <div class="left">
+                                        <h2>
+                                            Игровой ноутбук HP OMEN 16
+                                        </h2>
+
+                                        <p><span>599 990 ₸</span>559 990 ₸</p>
+                                    </div>
+
+                                    <div class="right">
+                                        <img src="img/images/igrovoj_noutbuk_161_hp_omen_16_wd0009ci_ci5_13420h_16_512_rtx4050_6_d81c38ea_275644_1.jpg" alt="Здесь должна была быть картинка">
+                                    </div>
+                                </a>
+                                <a href="./product-website-8.html" class="click-block">
+                                    <div class="left">
+                                        <h2>
+                                            Игровой ноутбук Lenovo IdeaPad Gaming 3
+                                        </h2>
+
+                                        <p><span>559 990 ₸</span>489 990₸</p>
+                                    </div>
+
+                                    <div class="right">
+                                        <img src="img/images/igrovoj_noutbuk_lenovo_ideapad_gaming_3_i7_12650h_16gb_512ssd_268505_1b.jpg" alt="Здесь должна была быть картинка">
+                                    </div>
+                                </a>
+                                <a href="product-website-9.html" class="click-block">
+                                    <div class="left">
+                                        <h2>
+                                            Игровой ноутбук Asus ROG Strix G16
+                                        </h2>
+
+                                        <p><span>787 990 ₸</span>689 990₸</p>
+                                    </div>
+
+                                    <div class="right">
+                                        <img src="img/images/igrovoj_noutbuk_16_asus_rog_strix_g16_ci5_13450hx_16_1000_rtx4050_6_dg614ju_n3170_269962_1zz.jpg" alt="Здесь должна была быть картинка">
+                                    </div>
+                                </a>
+                                <a href="product-website-10.html" class="click-block">
+                                    <div class="left">
+                                        <h2>
+                                            Игровой ноутбук Asus ROG Zephyrus M16
+                                        </h2>
+
+                                        <p><span>797 990 ₸</span>699 990 ₸</p>
+                                    </div>
+
+                                    <div class="right">
+                                        <img src="img/images/igrovoj_noutbuk_asus_rog_zephyrus_m16_gu603ze_k8033_257920_1b.jpg" alt="Здесь должна была быть картинка">
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+    
+    <footer class="footer" id="footer">
+        <div class="container">
+            <div class="footer__content">
+                <div class="footer__first">
+                    <div class="footer__logo">
+                        <a href="index.html">
+                            <img src="img/images/revo_logo.png" alt="Здесь должна была быть картинка">
+                        </a>
+                    </div>
+                </div>
+
+                <div class="footer__list">
+                    <div class="footer__element">
+                        <h2>Главная Информация</h2>
+                        <ul>
+                            <li><a href="index.html">Главная</a></li>
+                            <li><a href="shop.html">Магазин</a></li>
+                            <li><a href="company.html">О компании</a></li>
+                        </ul>
+                    </div>
+                    
+                    <div class="footer__element">
+                        <h2>Новые предметы</h2>
+                        <ul>
+                            <li><a href="#">2022</a></li>
+                            <li><a href="#">2023</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="footer__element">
+                        <h2>Наша продукция</h2>
+                        <ul>
+                            <li><a href="#hero">Каталог</a></li>
+                            <li><a href="shop.html">Товары</a></li>
+                            <li><a href="#footer">Конакты</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="footer__last">
+                    <div class="last-top">
+                        <a href="https://www.facebook.com/profile.php?id=100037256747266"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="https://www.youtube.com/channel/UCoeLvz3jbH4KaepLVECqZ5A"><i class="fa-brands fa-youtube"></i></a>
+                        <a href="https://www.instagram.com/dinur928/"><i class="fa-brands fa-instagram"></i></a>
+                    </div>
+
+                    <div class="last-bottom">
+                        <p>REVO®</p>
+                        <p>Все права защищены</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="js/main.js"></script>
+    <script src="./js/cart.js"></script>
+</body>
+
+</html>
